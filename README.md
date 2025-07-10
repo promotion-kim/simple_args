@@ -36,7 +36,7 @@ Reward & Cost Model Training
 python rm_train.py 
 ```
 
-3. Train Cost Model
+2. Train Cost Model
 
 ```bash
 python cm_train.py
