@@ -17,15 +17,14 @@ This repository contains the implementation of the ARGS algorithm, including env
 # Create a new conda environment
 conda create -n args_env python=3.15.3 -y
 conda activate args_env
+```
 
 2. Install Dependencies
 
+```bash
 # Using requirements.txt
 pip install -r requirements.txt
-
-Note: You can update requirements.txt by running:
-
-pip freeze > requirements.txt
+```
 
 
 
@@ -33,18 +32,24 @@ Reward & Cost Model Training
 
 1. Train Reward Model
 
+```bash
 python rm_train.py 
+```
 
 3. Train Cost Model
 
+```bash
 python cm_train.py
+```
 
 Reward & Cost Model Evaluation
 
 1. Evaluation Script
 
+```bash
 python rm_eval.py
 python cm_eval.py
+```
 
 2. Evaluation Metrics
 	•	Reward Model: Accuracy
@@ -54,7 +59,9 @@ Running ARGS
 
 1. Inference Script
 
+```bash
 python args.py
+```
 
 2. Output
 	•	Generated responses will be saved in output/sft_vs_args.csv
